@@ -2,6 +2,41 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+
+## Github Pages
+
+[https://pkljack.github.io/demo-angular-githubpages/](https://pkljack.github.io/demo-angular-githubpages/)
+
+Install `gh-pages`
+```sh
+npm i --save-dev gh-pages
+```
+
+
+Build
+```sh
+ng build --base-href /demo-angular-githubpages/
+```
+
+
+Deploy
+```sh
+NODE_DEBUG=gh-pages \
+node_modules/.bin/gh-pages \
+--no-history \
+--remove .editorconfig \
+-d dist/demo-angular-githubpages/browser
+```
+- TODO: 
+  - Check other artifacts outside of `browser` directory, e.g. 
+    - `dist/demo-angular-githubpages/prerendered-routes.json`
+    - `dist/demo-angular-githubpages/3rdpartylicenses.txt`
+
+
+What is not tested:
+- [ ] Routing
+
+
 ## Development server
 
 To start a local development server, run:

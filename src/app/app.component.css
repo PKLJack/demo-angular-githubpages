@@ -1,0 +1,27 @@
+.squares {
+  display: flex;
+}
+
+.squares > * {
+  width: 3rem;
+  aspect-ratio: 1;
+  margin-block-start: 0.5rem;
+  margin-inline-end: 0.5rem;
+}
+
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-blue {
+  background-color: blue;
+}
+
+.responsive-img {
+  max-width: 1200px;
+  width: 100%;
+  min-width: 50px;
+  object-fit: contain;
+}
